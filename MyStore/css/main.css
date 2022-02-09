@@ -94,27 +94,35 @@
 }
 
 /*---- Product Section ----*/
+.product-item-title {
+  margin-bottom: 8px;
+}
 
-/* .product-item {
-  width: calc(100% / 3); 
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-item {
+  width: calc(90% / 3); 
   margin-bottom: 16px;
-} */
+  padding: 0px 16px;
+}
 
 .product-item-image {
   font-size: 18px;
   font-weight: 600;
   border-radius: 18px;
   margin-bottom: 12px;
-  width: calc(100% / 3); 
+  width: 100%; 
   margin-bottom: 16px;
 }
 
-.product-item-title {
-  margin-bottom: 8px;
-}
 
 .price {
   margin-top: 24px;
 }
+
 
 /*---- About Section ----*/
