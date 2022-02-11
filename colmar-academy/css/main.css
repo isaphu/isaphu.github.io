@@ -56,12 +56,12 @@
 }
 
 .section-two-left-content {
-    background-color:aqua;
+    /* background-color:aqua; */
     padding: 32px 24px 32px 24px;
 }
 
 .section-two-left-content img {
-    /* width: 100%; */
+    width: 100%;
 }
 
 .section-two-right-content {
