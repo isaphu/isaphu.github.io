@@ -1,6 +1,6 @@
 /* ----body---- */
 .container {
-    width: 100%;
+  width: 100%;
 }
 
 /* ----header---- */
@@ -13,13 +13,13 @@
 }
 
 .colmar-text {
-    font-weight: bold;
-    font-size: medium;
+  font-weight: bold;
+  font-size: medium;
 }
 
 .academy-text {
-    color:silver;
-    font-size:medium;
+  color: silver;
+  font-size: medium;
 }
 
 .menu-bar-logo {
@@ -36,45 +36,16 @@
 }
 
 .nav-item {
-    /* ----space between button---- */
-    margin-left: 16px;
-    padding-top: 25px;
-    text-decoration: none;
+  /* ----space between button---- */
+  margin-left: 16px;
+  padding-top: 25px;
+  text-decoration: none;
 }
 
 .nav-list {
-    display: flex;
-    padding-right: 24px;
+  display: flex;
+  padding-right: 24px;
 }
 
 /* ----article---- */
 
-.article {
-    background-color: #d7d7d7;
-    display: flex;
-    flex-direction: column;
-}
-
-.section-two-left-content {
-    /* background-color:aqua; */
-    padding: 32px 24px 32px 24px;
-}
-
-.section-two-left-content img {
-    width: 100%;
-}
-
-.section-two-right-content {
-    background-color: red;
-    /* margin-right: 800px;  */
-    height: 900px;
-    float: right;
-}
-
-.section-two-right-content h1 {
-    font-weight: 5rem;
-}
-
-.section-two-right-content h2 {
-    font-weight: 2rem;
-}
