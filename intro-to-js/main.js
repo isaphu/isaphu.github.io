@@ -36,26 +36,26 @@
 //   printGroupName(1)
 
 //Exercise #2
-function businessHours(dayNumber, hourNumber) {
+// function businessHours(dayNumber, hourNumber) {
 
-  if((dayNumber >= 1 && dayNumber <= 5) && (hourNumber >= 9 && hourNumber <= 18)) {
-    return true
-  } else {
-    return false
-  }
-}
+//   if((dayNumber >= 1 && dayNumber <= 5) && (hourNumber >= 9 && hourNumber <= 18)) {
+//     return true
+//   } else {
+//     return false
+//   }
+// }
 
-console.log(businessHours(1,10))
-console.log(businessHours(5,19))
-console.log(businessHours(6,13))
-console.log(businessHours(7,9))
+// console.log(businessHours(1,10))
+// console.log(businessHours(5,19))
+// console.log(businessHours(6,13))
+// console.log(businessHours(7,9))
 
 
-function getDayNumber(janFirstDayNumber, yearDayNumber) {
+// function getDayNumber(janFirstDayNumber, yearDayNumber) {
 
   
     
-}
+// }
 
 //23-Feb-2022 Array and loop
 
@@ -97,11 +97,33 @@ cars = [0,1,2,3,4,5,6,7,8,9]
 //   console.log(star)
 // }
 
-const queue = ['ลูกน้ำ','นนท์']
+// const queue = ['ลูกน้ำ','นนท์']
 
-queue[3]='น้องนัน'
+// queue[3]='น้องนัน'
 
-const lastItem = queue.length -1
-for(let idx=lastItem; idx >= 0;idx--) {
-  console.log(queue[idx])
+// const lastItem = queue.length -1
+// for(let idx=lastItem; idx >= 0;idx--) {
+//   console.log(queue[idx])
+// }
+
+// const exQueue = ['ชมพู', 'นัน', 'นนท์']
+
+// for (let index = 0; index < exQueue.Length; index++) {
+//   if (exQueue[index] == "ชมพู")
+//   exQueue[index] = "อีกคน";
+//   console.log(exQueue)
+//   return exQueue
+// }
+
+const student = [
+  ['เต้', 'โจน', 'ปิง'],
+['ภัค', 'ป่าน', 'เบ๊บ']
+]
+
+for(let i = 0; i < student.length; i++) {
+  let finalResult = ''
+  for(let j = 0; j < student[i].length; j++) {
+    finalResult += student[i][j]
+  }
+  console.log(finalResult)
 }
