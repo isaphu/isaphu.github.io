@@ -35,27 +35,47 @@
 
 //   printGroupName(1)
 
-//Exercise #2
-// function businessHours(dayNumber, hourNumber) {
+// Exercise #1
+//part 1
+function businessHours(dayNumber, hourNumber) {
 
-//   if((dayNumber >= 1 && dayNumber <= 5) && (hourNumber >= 9 && hourNumber <= 18)) {
-//     return true
-//   } else {
-//     return false
-//   }
-// }
+  if((dayNumber >= 1 && dayNumber <= 5) && (hourNumber >= 9 && hourNumber <= 18)) {
+    return true
+  } else {
+    return false
+  }
+}
 
-// console.log(businessHours(1,10))
-// console.log(businessHours(5,19))
-// console.log(businessHours(6,13))
-// console.log(businessHours(7,9))
+console.log(businessHours(1,10))
+console.log(businessHours(5,19))
+console.log(businessHours(6,13))
+console.log(businessHours(7,9))
 
+//part 2
+function getDayNumber(janFirstDayNumber, yearDayNumber) {
 
-// function getDayNumber(janFirstDayNumber, yearDayNumber) {
+  if(yearDayNumber % 7 === 0) {
+    return janFirstDayNumber;
+  } else {
+    return (yearDayNumber + janFirstDayNumber - 7) % 7
+  }
+}
 
-  
-    
-// }
+console.log(getDayNumber(6,0))
+console.log(getDayNumber(6,1))
+console.log(getDayNumber(6,9))
+console.log(getDayNumber(6,364))
+
+//part 3
+function isBusinessHoursByYearDay(janFirstDayNumber, yearDayNumber,hourNumber) {
+  const dayNumber = getDayNumber(janFirstDayNumber, yearDayNumber)
+  return businessHours(dayNumber, hourNumber)
+}
+
+console.log(isBusinessHoursByYearDay(6,0,19))
+console.log(isBusinessHoursByYearDay(6,4,9))
+console.log(isBusinessHoursByYearDay(6,0,19))
+
 
 //23-Feb-2022 Array and loop
 
@@ -115,15 +135,15 @@ cars = [0,1,2,3,4,5,6,7,8,9]
 //   return exQueue
 // }
 
-const student = [
-  ['เต้', 'โจน', 'ปิง'],
-['ภัค', 'ป่าน', 'เบ๊บ']
-]
+// const student = [
+//   ['เต้', 'โจน', 'ปิง'],
+// ['ภัค', 'ป่าน', 'เบ๊บ']
+// ]
 
-for(let i = 0; i < student.length; i++) {
-  let finalResult = ''
-  for(let j = 0; j < student[i].length; j++) {
-    finalResult += student[i][j]
-  }
-  console.log(finalResult)
-}
+// for(let i = 0; i < student.length; i++) {
+//   let finalResult = ''
+//   for(let j = 0; j < student[i].length; j++) {
+//     finalResult += student[i][j]
+//   }
+//   console.log(finalResult)
+// }
