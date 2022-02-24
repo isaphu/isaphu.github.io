@@ -224,3 +224,47 @@ const sumPositive = (n) => {
   return sum
 }
 console.log(sumPositive(19))
+
+//24-FEB-2020
+
+//Exercise 1
+console.log('Exercise 1:')
+
+//Part 1 
+console.log('Part 1:')
+
+const intersaction = (array1,array2) => {
+  const newArray = array1.filter(i => array2.includes(i));
+  return newArray
+}
+
+console.log(intersaction(['nun', 'ink', 'oat'], ['nun', 'tim']))
+
+//Part 2
+console.log('Part 2:')
+
+const getWordLength = (wordArray) => {
+  return wordArray.map(i => i.length)
+}
+
+console.log(getWordLength(['nun', 'inkna', 'oatkrub']))
+
+//Exercise 2
+console.log('Exercise 2')
+
+function numberRange(n) {
+  if (n < 0) {
+    console.log(`${n} is less than 0`)
+  } else if (n <= 25) {
+    console.log(`${n} is between 0 and 25`)
+  } else if (n <= 100) {
+    console.log(`${n} is between 26 and 100`)
+  } else if (n > 100) {
+    console.log(`${n} is greater than 100`)
+  }
+}
+
+numberRange(25);   
+numberRange(75);   
+numberRange(125);  
+numberRange(-25);
