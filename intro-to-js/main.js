@@ -2,38 +2,38 @@
 
 
 //Exercise #1
-// const printGroupName = (groupNo) => {
-//     let groupName;
+const printGroupName = (groupNo) => {
+    let groupName;
   
-//     if(groupNo === 1) {
-//       groupName = 'Pokki'
-//     } else if (groupNo === 2) {
-//       groupName = 'ปาท๋องโก๋'
-//     } else if (groupNo === 3) {
-//       groupName = 'ติวกระตุกจิต'
-//     } else if (groupNo === 4) {
-//       groupName = 'สี่ไม่ซี้'
-//     } else if (groupNo === 5) {
-//       groupName = 'Laugh Tale'
-//     } else if (groupNo === 6) {
-//       groupName = 'ซานตา'
-//     } else if (groupNo === 7) {
-//       groupName = 'สายลับ เจมส์บอนด์'
-//     } else if (groupNo === 8) {
-//       groupName = 'Infinity'
-//     } else if (groupNo === 10) {
-//       groupName = 'Ben Ten'
-//     } else if (groupNo === 11) {
-//       groupName = 'เต้าหู้'
-//     } else if (groupNo === 12) {
-//       groupName = 'แป้งเย็น'
-//     } else {
-//       groupName = 'พี่นัน'
-//     }
-//     console.log('Your Group Name =', groupName)
-//   }
+    if(groupNo === 1) {
+      groupName = 'Pokki'
+    } else if (groupNo === 2) {
+      groupName = 'ปาท๋องโก๋'
+    } else if (groupNo === 3) {
+      groupName = 'ติวกระตุกจิต'
+    } else if (groupNo === 4) {
+      groupName = 'สี่ไม่ซี้'
+    } else if (groupNo === 5) {
+      groupName = 'Laugh Tale'
+    } else if (groupNo === 6) {
+      groupName = 'ซานตา'
+    } else if (groupNo === 7) {
+      groupName = 'สายลับ เจมส์บอนด์'
+    } else if (groupNo === 8) {
+      groupName = 'Infinity'
+    } else if (groupNo === 10) {
+      groupName = 'Ben Ten'
+    } else if (groupNo === 11) {
+      groupName = 'เต้าหู้'
+    } else if (groupNo === 12) {
+      groupName = 'แป้งเย็น'
+    } else {
+      groupName = 'พี่นัน'
+    }
+    console.log('Your Group Name =', groupName)
+  }
 
-//   printGroupName(1)
+  printGroupName(1)
 
 // Exercise #1
 //part 1
@@ -83,67 +83,144 @@ console.log(isBusinessHoursByYearDay(6,0,19))
 
 cars = [0,1,2,3,4,5,6,7,8,9]
 
-// for(let i = 0; i < cars.length; i++) {
-//   console.log("the number is " + i); 
-// }
+for(let i = 0; i < cars.length; i++) {
+  console.log("the number is " + i); 
+}
 
-// let number = 9;
-// while(number > 0) {
-//   console.log('the number is ' + number);
-//   number -=1
-// }
+let number = 9;
+while(number > 0) {
+  console.log('the number is ' + number);
+  number -=1
+}
 
-// let number = 0;
-// for(let i = 0; i < 20; i++) {
-//   if(i % 2 == 0) {
-//   console.log('the number is ',i)
-//   }
-// }
+let number = 0;
+for(let i = 0; i < 20; i++) {
+  if(i % 2 == 0) {
+  console.log('the number is ',i)
+  }
+}
 
-// x = 20
+x = 20
 
-// while(x > 0) {
-//     console.log(x)
-//     x -= 1
-// }
+while(x > 0) {
+    console.log(x)
+    x -= 1
+}
 
 
-// let count = 0;
-// for (let number =0; number < 3; number++) {
-//   let star = '';
-//   for(let no = 2 - number; no >= 0; no--) {
-//     star+= "*"
-//   }
-//   console.log(star)
-// }
+let count = 0;
+for (let number =0; number < 3; number++) {
+  let star = '';
+  for(let no = 2 - number; no >= 0; no--) {
+    star+= "*"
+  }
+  console.log(star)
+}
 
-// const queue = ['ลูกน้ำ','นนท์']
+const queue = ['ลูกน้ำ','นนท์']
 
-// queue[3]='น้องนัน'
+queue[3]='น้องนัน'
 
-// const lastItem = queue.length -1
-// for(let idx=lastItem; idx >= 0;idx--) {
-//   console.log(queue[idx])
-// }
+const lastItem = queue.length -1
+for(let idx=lastItem; idx >= 0;idx--) {
+  console.log(queue[idx])
+}
 
-// const exQueue = ['ชมพู', 'นัน', 'นนท์']
+const exQueue = ['ชมพู', 'นัน', 'นนท์']
 
-// for (let index = 0; index < exQueue.Length; index++) {
-//   if (exQueue[index] == "ชมพู")
-//   exQueue[index] = "อีกคน";
-//   console.log(exQueue)
-//   return exQueue
-// }
+for (let index = 0; index < exQueue.Length; index++) {
+  if (exQueue[index] == "ชมพู")
+  exQueue[index] = "อีกคน";
+  console.log(exQueue)
+  return exQueue
+}
 
-// const student = [
-//   ['เต้', 'โจน', 'ปิง'],
-// ['ภัค', 'ป่าน', 'เบ๊บ']
-// ]
+const student = [
+  ['เต้', 'โจน', 'ปิง'],
+['ภัค', 'ป่าน', 'เบ๊บ']
+]
 
-// for(let i = 0; i < student.length; i++) {
-//   let finalResult = ''
-//   for(let j = 0; j < student[i].length; j++) {
-//     finalResult += student[i][j]
-//   }
-//   console.log(finalResult)
-// }
+for(let i = 0; i < student.length; i++) {
+  let finalResult = ''
+  for(let j = 0; j < student[i].length; j++) {
+    finalResult += student[i][j]
+  }
+  console.log(finalResult)
+}
+
+//24-Feb-2022 
+
+//Exercise #1
+console.log('Exercise #1:')
+//Part 1
+
+console.log('Part 1:')
+const customerName = ['Sofia','David','Juan']
+console.log(customerName)
+
+//Part 2
+console.log('Part 2:')
+customerName.push('Sara','Augustin')
+console.log(customerName)
+
+//Part 3
+console.log('Part 3:')
+customerName.splice(2,0,'Renata')
+customerName.push('Elena')
+console.log(customerName)
+
+//Exercise #2
+console.log('Exercise #2:')
+
+for(let i = 0; i < 6; i++) {
+  let star = '';
+ for(let j = 0; j >= 1-i; j--) {
+    star +=' *'
+  }
+  console.log(star)
+}
+
+//Exercise #3
+console.log('Exercise #3:')
+
+//3.1
+console.log('3.1:')
+
+const decreasingXValue = (xValue) => {
+    while (xValue > 0) {
+        console.log(xValue -= 0.5)
+    }
+}
+
+decreasingXValue(2)
+
+//3.2
+console.log('3.2:')
+
+for (let i = 2; i < 100; i += 2) {
+  console.log(i)
+}
+
+//3.3
+console.log('3.3:')
+
+const printNBrackets = (n) => {
+let result = ''
+for (let i = 1; i <= n; i++) {
+  result += `[${i}]`
+  } 
+  return result
+}
+console.log(printNBrackets(6))
+
+//3.4
+console.log('3.4:')
+
+const sumPositive = (n) => {
+  let sum = 0;
+  for(let i = 1; i <= n; i++) {
+    sum += i
+  }
+  return sum
+}
+console.log(sumPositive(19))
