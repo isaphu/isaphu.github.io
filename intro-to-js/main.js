@@ -93,7 +93,7 @@ while(number > 0) {
   number -=1
 }
 
-let number = 0;
+// let number = 0;
 for(let i = 0; i < 20; i++) {
   if(i % 2 == 0) {
   console.log('the number is ',i)
@@ -268,3 +268,17 @@ numberRange(25);
 numberRange(75);   
 numberRange(125);  
 numberRange(-25);
+
+//25-FEB-2022 
+
+const starMaker = () => {
+  for(let i = 0; i < 6; i++) {
+    let pyramid = '';
+    for(let j = 0; j >= 1-i; j--) {
+      pyramid +=' *'
+    }
+    console.log(pyramid)
+  }
+}
+
+starMaker()
