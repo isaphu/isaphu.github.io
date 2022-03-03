@@ -1,4 +1,4 @@
-//22-FEB-2022 'Control-Flow'
+/* //22-FEB-2022 'Control-Flow'
 
 
 //Exercise #1
@@ -282,3 +282,88 @@ const starMaker = () => {
 }
 
 starMaker()
+
+//02-MAR-2022 Async Await
+
+const orderNoodle = new Promise((teSaiCharm, teting) => {
+  setTimeout(() => {
+    teSaiCharm('เล็กไม่ผัก')
+  }, 20000);
+});
+
+const nhomBuang = new Promise((eat, teting) => {
+  setTimeout(() => {
+    eat('ขนมเบื้อง')
+  }, 5000)
+})
+
+const buyMilkTea = new Promise((drink, teting) => {
+  setTimeout(() => {
+    drink('ชาเขียวหวาน้อย')
+  }, 5000)
+})
+
+*/
+//class
+
+class Person {
+  constructor(name,gender,power) {
+    this.name = name;
+    this.gender = gender;
+    this.power = power;
+  }
+
+  run(hour) {
+    return this.power -= 20 * hour
+
+  }
+
+  study(hour) {
+    return this.power -= 5 * hour
+  }
+
+  sleep(hour) {
+    return this.power -= 2 *  hour
+  }
+
+  eat(powerScore) {
+    return this.power += powerScore
+
+  }
+}
+
+const isaRoutine = new Person('isa', 'male', 100);
+console.log('isaRoutine', isaRoutine)
+console.log(`Isa has ${isaRoutine.run(2)} hours left of power after run`)
+console.log(`Isa has ${isaRoutine.study(3)} hours left of power after study`)
+console.log(`Isa has ${isaRoutine.sleep(3)} hours left of power after sleep`)
+console.log(`Isa is likely to be awake for another ${isaRoutine.eat(2)} hours`)
+
+class Employee extends Person {
+  constructor(name, gender, power, job, salary) {
+    super(name, gender, power);
+    this.job = job;
+    this.salary = salary
+    this.inventory = [];
+  }
+
+  printJob() {
+    console.log(this.job)
+  }
+
+  doingWork(hour) {
+    return this.power -= 5 * hour
+  }
+
+  shopping(productName, price) {
+    this.inventory.push(productName);
+    this.salary -= price;
+  }
+}
+
+const harryAtWork = new Employee('Harry','male',100,'SE',50000)
+console.log('harryAtWork',harryAtWork)
+console.log(harryAtWork.printJob())
+console.log(harryAtWork.doingWork(8))
+console.log(harryAtWork.shopping('bag', 20))
+console.log(harryAtWork.inventory)
