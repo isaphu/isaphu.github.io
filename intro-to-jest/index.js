@@ -3,14 +3,16 @@ function sum(a,b) {
 }
 console.log(sum(3,2))
 
-const mul = (a,b) => {
-    return a * b
+const subtract = (a,b) => {
+    return a - b;
+};
+
+console.log(subtract(3,2));
+
+const firstName = () => {
+    console.log('hello')
 }
 
-console.log(mul(4,5))
+firstName()
 
-// const { sum, mul } = allFunction;
-
-// module.exports = allFunction;
-
-module.exports = sum;
+module.exports = { sum: sum, subtract: subtract, firstName: firstName}
