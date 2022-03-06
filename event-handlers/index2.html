@@ -1,0 +1,21 @@
+<html>
+    <body>
+        //two types of event in the same item
+        <button id="btn">Click me</button>
+
+        <script>
+            var btn = document.getElementById('btn');
+
+            function once() {
+                btn.textContent = 'You have clicked me'
+            }
+
+            function mouse() {
+                alert('you have put mouseover')
+            }
+
+            btn.addEventListener('click', once)
+            btn.addEventListener('mouseout', mouse)
+        </script>
+    </body>
+</html>
