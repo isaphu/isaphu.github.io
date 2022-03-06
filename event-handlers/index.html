@@ -5,8 +5,18 @@
     function greeting() {
         alert('Hello there!')
     }
+    //
+</script>
+<script>
+    window.onload = function() {
+        var btn = document.getElementById('btn');
+        btn.onclick = function() {
+            alert(this.id);
+        }
+    }
 </script>
 <body>
-    <button onclick="greeting()">Click me</button>
+    <button onclick="greeting()">Click me1</button>
+    <button id="btn">Click me</button>
 </body>
 </html>
