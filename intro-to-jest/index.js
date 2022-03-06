@@ -1,18 +1,27 @@
-function sum(a,b) {
-    return a + b
-}
-console.log(sum(3,2))
+const fetch = require('./node_modules/');
 
-const subtract = (a,b) => {
-    return a - b;
+const fetchData = async () => {
+    const url = 'https://reqres.in/api/users/2';
+    const res = await fetch(url)
+
+    const jsonResult = await res.json();
+    console.log('jsonResult', jsonResult)
+    return jsonResult.data;
 };
 
-console.log(subtract(3,2));
+fetchData();
 
-const firstName = () => {
-    console.log('hello')
+// function sum(a,b) {
+//     return a + b
+// };
+
+// const subtract = (a,b) => {
+//     return a - b;
+// };
+
+
+module.exports = { 
+    // sum: sum, 
+    // subtract: subtract,
+    fetchData: fetchData
 }
-
-firstName()
-
-module.exports = { sum: sum, subtract: subtract, firstName: firstName}
