@@ -28,7 +28,7 @@
 
         </style>
         <script>
-            window.addEventListener("touchstart", function(event) {
+            window.addEventListener("touchmove", function(event) {
                 for(var i = 0; i < event.touches.length; i++) {
                     var fingers = event.touches[i];
                     var dot = document.createElement("div")
@@ -37,7 +37,8 @@
                     dot.style.top = (fingers.pageY + 4) + "px";
                     document.body.appendChild(dot);
                 }
-            })
+                event.preventDefault();
+            }, {passive: false})
         </script>
 
     </footer>
