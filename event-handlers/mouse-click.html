@@ -1,0 +1,62 @@
+<html>
+    <header>
+        <button id="larger">MAKE ME LARGER</button> 
+    </header>
+    <body>
+        <div>
+            <h1>Hi There!</h1>
+            <h2>My name is Isa Phuyuthanon!</h2>
+        </div>
+    </body>
+    <footer>
+        <style>
+            body {
+                height: 200px;
+                background: salmon;
+            }
+
+            .dot {
+                height: 8px;
+                width: 8px;
+                border-radius: 4px;
+                background: grey;
+                position: absolute;
+            }
+            h1,h2 {
+                text-align: center;
+            }
+
+        </style>
+        <script>
+            window.addEventListener("mousemove", function(event) {
+                var dot = document.createElement("div")
+                dot.className = "dot";
+                dot.style.left = (event.pageX - 4) + "px";
+                dot.style.top = (event.pageY + 4) + "px";
+                if ((event.pageY - 4) > 27) {
+                    document.body.appendChild(dot);
+                }
+            })
+
+            var buttonLarger = document.getElementById("larger");
+            buttonLarger.addEventListener("mouseover", function(event) {
+                var dot = document.getElementsByClassName("dot");
+                for(var i = 0; i < dot.length; i++) {
+                    dot[i].style.height = "16px";
+                    dot[i].style.width = "16px";
+                    dot[i].style.borderradius = "8px";
+                }
+            })
+
+            buttonLarger.addEventListener("mouseout", function(event) {
+                var dot = document.getElementsByClassName("dot");
+                for(var i = 0; i < dot.length; i++) {
+                    dot[i].style.height = "8px";
+                    dot[i].style.width = "8px";
+                    dot[i].style.borderradius = "4px";
+                }
+            })
+        </script>
+
+    </footer>
+</html>

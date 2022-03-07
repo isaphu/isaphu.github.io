@@ -1,0 +1,27 @@
+<html>
+<body>
+
+    <p id="item" style="background: red; width: 80px; height: 20px"></p>
+
+    <script>
+        var lastX;
+        var item = document.getElementById("item");
+        item.addEventListener("mousedown", function (event) {
+            if (event.button == 0) {
+                lastX = event.clientX;
+                window.addEventListener("mousemove", moved)
+            }
+        })
+
+        function moved(event) {
+            var dist = event.clientX - lastX;
+            var newWidth = item.offsetWidth + dist;
+            item.style.windth = newWidth + "px";
+            lastX = event.clientX;
+        }
+
+    </script>
+
+</body>
+
+</html>
