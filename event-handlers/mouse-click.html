@@ -56,6 +56,18 @@
                     dot[i].style.borderradius = "4px";
                 }
             })
+
+            window.addEventListener("keydown", event => {
+                if(event.key == "v") {
+                    document.body.style.background = "blue"
+                }
+            })
+
+            window.addEventListener("keyup", event => {
+                if(event.key == "v") {
+                    document.body.style.background = "salmon"
+                }
+            })
         </script>
 
     </footer>
