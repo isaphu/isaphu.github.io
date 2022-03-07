@@ -1,0 +1,44 @@
+<html>
+    <header>
+        <button id="larger">MAKE ME LARGER</button> 
+    </header>
+    <body>
+        <div>
+            <h1>Hi There!</h1>
+            <h2>My name is Isa Phuyuthanon!</h2>
+        </div>
+    </body>
+    <footer>
+        <style>
+            body {
+                height: 200px;
+                background: salmon;
+            }
+
+            .dot {
+                height: 8px;
+                width: 8px;
+                border-radius: 4px;
+                background: grey;
+                position: absolute;
+            }
+            h1,h2 {
+                text-align: center;
+            }
+
+        </style>
+        <script>
+            window.addEventListener("touchstart", function(event) {
+                for(var i = 0; i < event.touches.length; i++) {
+                    var fingers = event.touches[i];
+                    var dot = document.createElement("div")
+                    dot.className = "dot";
+                    dot.style.left = (fingers.pageX - 4) + "px";
+                    dot.style.top = (fingers.pageY + 4) + "px";
+                    document.body.appendChild(dot);
+                }
+            })
+        </script>
+
+    </footer>
+</html>
