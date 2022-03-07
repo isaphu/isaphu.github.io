@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <p id="cat" style="font-size: 90px;">😺</p>
+    </body>
+    <footer>
+        <script>
+            var cat = document.getElementById("cat");
+            function keydown(event) {
+                const keyName = event.key;
+                if(keyName == "ArrowUp") {
+                    cat.style = "font-size:150px";
+                } else if (keyName == "ArrowDown") {
+                    cat.style = "font-size:50px";
+                }
+            }
+            document.addEventListener("keydown", keydown);
+        </script>
+
+    </footer>
+
+</html>
